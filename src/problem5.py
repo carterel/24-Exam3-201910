@@ -217,6 +217,14 @@ def problem5(x):
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
+    iterator = x
+    while True:
+        if is_prime(iterator):
+            if is_prime(sum_of_digits(iterator)):
+                return iterator
+
+        iterator += 1
+
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
